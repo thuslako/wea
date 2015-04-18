@@ -26,20 +26,20 @@
       <p class="lead">daily weather</p>
     </header>
     <div class="container">
-    <div ng-controller="mainCTRL">
-      <div ng-submit="getWea()" ng-submit="getWea()" class="input-group">
-          <span class="input-group-btn">
-            <button class="btn btn-default" ng-click="getWea()" type="button">Get</button>
-          </span>
-          <input type="text" class="form-control" placeholder="City" ng-model="city"/>
-      </div>
-      <h3>{{wea.name}}</h3>
-      <p>{{wea.weather[0].description}}</p>
-      <p>{{temp| number:2}}</p>
-    </div> 
+      <div  id="wea" ng-controller="mainCTRL">
+        <form ng-submit="getWea()" ng-submit="getWea()" class="input-group">
+            <span class="input-group-btn">
+              <button class="btn btn-primary" ng-click="getWea()" type="button">Get</button>
+            </span>
+            <input type="text" class="form-control" placeholder="City" ng-model="city"/>
+        </form>
+        <h3>{{wea.name}}</h3>
+        <p>{{wea.weather[0].description}}</p>
+        <p>{{temp | number:2}}</p>
+      </div> 
 
       <div class="footer">
-        <p><span class="glyphicon glyphicon-heart"></span> from the Yeoman team</p>
+        <p><span class="glyphicon glyphicon-cloud"></span> Wea-ther!</p>
       </div>
 
     </div>
