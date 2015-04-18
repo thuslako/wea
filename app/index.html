@@ -33,9 +33,11 @@
             </span>
             <input type="text" class="form-control" placeholder="City" ng-model="city"/>
         </form>
-        <h3>{{wea.name}}</h3>
-        <p>{{wea.weather[0].description}}</p>
-        <p>{{temp | number:2}}</p>
+          <div id="card">
+            <h3>{{wea.name}}</h3>
+            <p>{{wea.weather[0].description}}</p>
+            <p id="temp-c">{{temp| number:2}}</p>
+          </div>
       </div> 
 
       <div class="footer">

@@ -8,7 +8,7 @@ angular.module('WeApp')
 					if($scope.wea.main.temp)
 						$scope.temp = $scope.wea.main.temp - 273.15;
 					else if($scope.temp == -273.15)
-						$scope.temp = null; 
+						$scope.temp = 0; 
 					console.log('get emm!');
 	 	    	})
 				.error(function(data, status, headers, config) {
