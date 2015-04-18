@@ -1,0 +1,30 @@
+define([ 
+    'angular',
+    'respond',
+    'controllers/controllers',
+    'filters/filters',
+    'directives/directives',
+    'services/services',
+    'angular.animate',
+    'angular.cookies',
+    'angular.resource',
+    'angular.route',
+    'angular.sanitize',
+    'angular-touch',
+    'uiBootstrapTpl',
+    'uiBootstrap'
+   ], function(angular) {
+    return angular.module('myAngularApp', [ 
+        'controllers',
+        'filters',
+        'directives',
+        'services',
+        'ngAnimate',
+        'ngCookies',
+        'ngResource',
+        'ngRoute',
+        'ngSanitize',
+        'ngTouch',
+        'ui.bootstrap'
+   ]);
+});
