@@ -48,12 +48,13 @@ header h1 {
 }
 
 #card {
+  display: none;
   max-width: 200px;
   min-width: 100px;
   background: #D8F6F8;
   margin: 20px auto;
-  padding-left: 5px;
-  padding-right: 5px;
+  padding-left: 10px;
+  padding-right: 10px;
 }
   #temp-c {
     color: #2485C2;

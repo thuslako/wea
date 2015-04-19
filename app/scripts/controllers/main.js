@@ -10,6 +10,9 @@ angular.module('WeApp')
 					else if($scope.temp == -273.15)
 						$scope.temp = 0; 
 					console.log('get emm!');
+					$("#card").fadeIn( "slow", function() {
+   						$("#card").fadeOut(6000);
+  					});
 	 	    	})
 				.error(function(data, status, headers, config) {
 	  				console.log('these nuts!');	
