@@ -11,6 +11,7 @@ angular.module('WeApp')
 						$scope.temp = 0; 
 					console.log('get emm!');
 					$("#card").fadeIn( "slow", function() {
+						$('#city').val('');
    						$("#card").fadeOut(6000);
   					});
 	 	    	})
